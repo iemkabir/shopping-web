@@ -1,0 +1,22 @@
+ <form action="" class="formElems">
+                  <div class="row mt-2" style="width: 90%; justify-content: center; align-items: center;">
+                    <img src="/image/user.png" alt="" style="width: 100px; ">
+                  </div>
+                  <div class="row mt-2" style="width: 90%;">
+                    <div class="col-md-6"><label class="labels">Name *</label><input type="text" class="form-control" placeholder="First Name" value=""></div>
+                    <div class="col-md-6"><label class="labels">Surname *</label><input type="text" class="form-control" value="" placeholder="Surname"></div>
+                </div>
+                <div class="row mt-3" style="width: 90%;">
+                  <div class="col-md-6"><input type="radio" id="html" name="fav_language" value="Male">
+                      <label for="html">Male</label><br></div>
+                  <div class="col-md-6"><input type="radio" id="html" name="fav_language" value="Female">
+                      <label for="html">Female</label><br></div>
+              </div>
+                <div class="row mt-3" style="width: 90%;">
+                    <div class="col-md-12"><label class="labels">PhoneNumber *</label><input type="text" class="form-control" placeholder="Enter Phone Number" value=""></div>
+                    <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="Enter Email id" value=""></div>
+                </div>
+                <div class="row mt-3" style="width: 90%;">
+                  <div class="col-md-12"><button class="sendAndEdit">EDIT</button> <button class="sendAndEdit">SAVE</button></div>
+              </div>
+</form>

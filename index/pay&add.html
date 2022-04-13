@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Multi Step Form | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/public/css/pay.css" />
+    <!--<link rel="stylesheet" href="/public/css/pay.css"> -->
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#!">
+          <img
+            src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
+            height="30"
+            alt="mdb logo"
+          />
+        </a>
+
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav1"
+          aria-controls="basicExampleNav1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="basicExampleNav1">
+          <!-- Right -->
+          <ul class="navbar-nav ml-auto MenuList">
+            <li class="nav-item">
+              <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                <span class="badge badge-pill red"></span>
+                <i class="fas fa-shopping-cart pl-0"></i>
+              </a>
+            </li>
+            <li class="nav-item hello2">
+              <a href="#!" class="nav-link waves-effect myCart"> Cart</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect Account"> Account </a>
+            </li>
+            <li class="nav-item signin" style="display: none">
+              <a
+                href="http://127.0.0.1:5500/index/login.html"
+                class="nav-link waves-effect"
+              >
+                Sign in
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container" style="padding: 120px 0px 120px 0px;">
+      <div class="main" style="padding: 80px; margin-top: -40px">
+        <div class="row">
+          <div>
+            <nav
+            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb"
+            >
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Library
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Billing Address Card Box-->
+
+          <div class="col-md-8 mb-4">
+            <div class="card mb-4 shadow-lg p-3 mb-5 bg-white rounded card1">
+              <div class="card-header py-3">
+                <h5 class="mb-0">Biling details</h5>
+              </div>
+              <div style="margin: 15px 0px 0px 20px">
+                <button
+                  style="
+                    border-radius: 2px;
+                    background-color: #2874f0;
+                    padding: 8px;
+                    color: white;
+                    border: none;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    class="_3bKK5G"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <path d="M0 0h16v16H0z"></path>
+                      <path
+                        class=""
+                        fill="#fff"
+                        d="M8 5.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 1 0 0-5.4zm6 2A6 6 0 0 0 8.7 2V.7H7.3V2A6 6 0 0 0 2 7.3H.7v1.4H2A6 6 0 0 0 7.3 14v1.3h1.4V14A6 6 0 0 0 14 8.7h1.3V7.3H14zm-6 5.4A4.7 4.7 0 0 1 3.3 8 4.7 4.7 0 0 1 8 3.3 4.7 4.7 0 0 1 12.7 8 4.7 4.7 0 0 1 8 12.7z"
+                      ></path>
+                    </g>
+                  </svg>
+                  Use my current Location
+                </button>
+              </div>
+              <div class="card-body">
+                <form>
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <input
+                          type="text"
+                          id="form7Example1"
+                          class="form-control"
+                          required/>
+                        <label class="form-label" for="form7Example1"
+                          >First name</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <input
+                          type="text"
+                          id="form7Example2"
+                          class="form-control"
+                          required/>
+                        <label class="form-label" for="form7Example2"
+                          >Last name</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <input
+                          type="text"
+                          id="form7Example3"
+                          class="form-control"
+                          required/>
+                        <label class="form-label" for="form7Example3"
+                          >Company name</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <input
+                          type="text"
+                          id="form7Example4"
+                          class="form-control"
+                          required/>
+                        <label class="form-label" for="form7Example4"
+                          >Locality</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <textarea
+                      class="form-control"
+                      id="form7Example7"
+                      rows="4"
+                      required></textarea>
+                    <label class="form-label" for="form7Example7"
+                      >Address(Area & Street)</label
+                    >
+                  </div>
+
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <input
+                          type="number"
+                          id="form7Example5"
+                          class="form-control"
+                          required/>
+                        <label class="form-label" for="form7Example5"
+                          >Pincode</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <input
+                          type="number"
+                          id="form7Example6"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="form7Example6"
+                          >Alternate Phone</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <input
+                          type="email"
+                          id="form7Example5"
+                          class="form-control"
+                          required/>
+                        <label class="form-label" for="form7Example5"
+                          >CITY/DISTRICT/TOWN</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <div class="form-outline">
+                          <select name="state" id="state" class="form-control" required>
+                            <option value="">Select Your State</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-center mb-2">
+                    <button type="button" class="btn btn-secondary SaveAdd">
+                      Save AND DELIEVER HERE
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Payment Card Box-->
+
+            <div class="card mb-4 shadow-lg p-3 mb-5 bg-white rounded card2" style="display: none">
+              <div class="card-header py-3">
+                <h5 class="mb-0">Payment Option</h5>
+              </div>
+              <div class="card-body">
+                <div class="card-header">
+                  <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                    <!-- Credit card form tabs -->
+                    <ul
+                      role="tablist"
+                      class="nav bg-light nav-pills rounded nav-fill mb-3"
+                    >
+                      <li class="nav-item">
+                        <a
+                          data-toggle="pill"
+                          href="#credit-card"
+                          class="nav-link active"
+                        >
+                          <i class="fas fa-credit-card mr-2"></i> Credit Card
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a data-toggle="pill" href="#paypal" class="nav-link">
+                          <i class="fab fa-paypal mr-2"></i> Paypal
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          data-toggle="pill"
+                          href="#net-banking"
+                          class="nav-link"
+                        >
+                          <i class="fas fa-mobile-alt mr-2"></i> UPI
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End -->
+                  <!-- Credit card form content -->
+                  <div class="tab-content">
+                    <!-- credit card info-->
+                    <div
+                      id="credit-card"
+                      class="tab-pane fade show active pt-3"
+                    >
+                      <form role="form" onsubmit="event.preventDefault()">
+                        <div class="form-group">
+                          <label for="username">
+                            <h6>Card Owner</h6>
+                          </label>
+                          <input
+                            type="text"
+                            name="username"
+                            placeholder="Card Owner Name"
+                            required=""
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="cardNumber">
+                            <h6>Card number</h6>
+                          </label>
+                          <div class="input-group">
+                            <input
+                              type="text"
+                              name="cardNumber"
+                              placeholder="Valid card number"
+                              class="form-control"
+                              required=""
+                            />
+                            <div class="input-group-append">
+                              <span class="input-group-text text-muted">
+                                <i class="fab fa-cc-visa mx-1"></i>
+                                <i class="fab fa-cc-mastercard mx-1"></i>
+                                <i class="fab fa-cc-amex mx-1"></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <div class="form-group">
+                              <label
+                                ><span class="hidden-xs">
+                                  <h6>Expiration Date</h6>
+                                </span></label
+                              >
+                              <div class="input-group">
+                                <input
+                                  type="number"
+                                  placeholder="MM"
+                                  name=""
+                                  class="form-control"
+                                  required=""
+                                />
+                                <input
+                                  type="number"
+                                  placeholder="YY"
+                                  name=""
+                                  class="form-control"
+                                  required=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form-group mb-4">
+                              <label
+                                data-toggle="tooltip"
+                                title="Three digit CV code on the back of your card"
+                              >
+                                <h6>
+                                  CVV
+                                  <i class="fa fa-question-circle d-inline"></i>
+                                </h6>
+                              </label>
+                              <input
+                                type="text"
+                                required=""
+                                class="form-control"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <button
+                            type="button"
+                            class="subscribe btn btn-primary btn-block shadow-sm"
+                          >
+                            Confirm Payment
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- End -->
+                    <!-- Paypal info -->
+                    <div id="paypal" class="tab-pane fade pt-3">
+                      <h6 class="pb-2">Select your paypal account type</h6>
+                      <div class="form-group">
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio" checked="" />
+                          Domestic
+                        </label>
+                        <label class="radio-inline">
+                          <input
+                            type="radio"
+                            name="optradio"
+                            class="ml-5"
+                          />International
+                        </label>
+                      </div>
+                      <p>
+                        <button type="button" class="btn btn-primary">
+                          <i class="fab fa-paypal mr-2"></i> Log into my Paypal
+                        </button>
+                      </p>
+                      <p class="text-muted">
+                        Note: After clicking on the button, you will be directed
+                        to a secure gateway for payment. After completing the
+                        payment process, you will be redirected back to the
+                        website to view details of your order.
+                      </p>
+                    </div>
+                    <!-- End -->
+                    <!-- bank transfer info -->
+                    <div id="net-banking" class="tab-pane fade pt-3">
+                      <div class="form-group">
+                        <label for="UPI">
+                          <h6>UPI</h6>
+                        </label>
+                        <p style="display: flex; justify-content: center">
+                          <button
+                            class="btn btn-primary"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseExample"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                            style="width: 80%"
+                          >
+                            Paytm
+                          </button>
+                        </p>
+                      </div>
+                      <p class="text-muted">
+                        Note: After clicking on the button, you will be directed
+                        to a secure gateway for payment. After completing the
+                        payment process, you will be redirected back to the
+                        website to view details of your order.
+                      </p>
+                    </div>
+                    <!-- End -->
+                    <!-- End -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End of Payment Card Box-->
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card mb-4 shadow-lg p-3 mb-5 bg-white rounded">
+              <div class="card-header py-3">
+                <h5 class="mb-0">Summary</h5>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0"
+                  >
+                    Products
+                    <span>$53.98</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center px-0"
+                  >
+                    Shipping
+                    <span>Gratis</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3"
+                  >
+                    <div>
+                      <strong>Total amount</strong>
+                      <strong>
+                        <p class="mb-0">(including VAT)</p>
+                      </strong>
+                    </div>
+                    <span><strong>$53.98</strong></span>
+                  </li>
+                </ul>
+
+                <button type="button" class="btn btn-primary btn-lg btn-block nextBtn">
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer font-small indigo panel-custom">
+      <!-- Footer Links -->
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Awards</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%" />
+
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+          <!-- Grid column -->
+          <div class="col-md-8 col-12 mt-5">
+            <p style="line-height: 1.7rem">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur.
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr
+          class="clearfix d-md-none rgba-white-light"
+          style="margin: 10% 15% 5%"
+        />
+
+        <!-- Grid row-->
+        <div class="row pb-3">
+          <!-- Grid column -->
+          <div class="col-md-12">
+            <div class="mb-5 flex-center">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text"> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/public/js/new1.js"></script>
+  </body>
+</html>

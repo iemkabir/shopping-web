@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/cart.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div id="loader">
+    </div>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#!">
+          <img
+            src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
+            height="30"
+            alt="mdb logo"
+          />
+        </a>
+
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav1"
+          aria-controls="basicExampleNav1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="basicExampleNav1">
+          <!-- Right -->
+          <ul class="navbar-nav ml-auto MenuList">
+            <li class="nav-item">
+              <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                <span class="badge badge-pill red"></span>
+                <i class="fas fa-shopping-cart pl-0"></i>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="#!" class="nav-link waves-effect Account"> <i class="fa-thin fa-user"></i> </a>
+            </li>
+            <li class="nav-item signin" style="display: none">
+              <a
+                href="http://127.0.0.1:5500/index/login.html"
+                class="nav-link waves-effect"
+              >
+                Sign in
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container-fluid CartBox hideItems">
+        <div class="row">
+            <aside class="col-lg-9">
+                <div class="card">
+                    <div class="table-responsive">
+                        <table class="table table-borderless table-shopping-cart">
+                            <thead class="text-muted">
+                                <tr class="small text-uppercase">
+                                    <th scope="col">Product</th>
+                                    <th scope="col" width="120">Quantity</th>
+                                    <th scope="col" width="120">Price</th>
+                                    <th scope="col" class="text-right d-none d-md-block" width="200"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="AddCartData">
+                              
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </aside>
+            <aside class="col-lg-3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group"> <label>Have coupon?</label>
+                                <div class="input-group"> <input type="text" class="form-control coupon" name="" placeholder="Coupon code"> <span class="input-group-append"> <button class="btn btn-primary btn-apply coupon">Apply</button> </span> </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card priceBox">
+                    <div class="card-body">
+                      <dl class="dlist-align">
+                        <dt>Total Items:</dt>
+                        <dd class="text-right ml-3"></dd>
+                    </dl>
+                        <dl class="dlist-align">
+                            <dt>Total price:</dt>
+                            <dd class="text-right ml-3"></dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt>Discount:</dt>
+                            <dd class="text-right text-danger ml-3">- $10.00</dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt>Total:</dt>
+                            <dd class="text-right text-dark b ml-3"><strong></strong></dd>
+                        </dl>
+                        <hr> <a href="http://127.0.0.1:5500/index/myorders.html" class="btn btn-out btn-primary btn-square btn-main PurchaseCnfrm" data-abc="true"> Make Purchase </a> <a href="http://127.0.0.1:5500/index/pages.html" class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Continue Shopping</a>
+                    </div>
+                </div>  
+            </aside>
+        </div>
+    </div>
+    
+    <div class="container-fluid mt-100 EmptyCart">
+      <div class="row mt-100" style="justify-content: center;">
+          <div class="col-md-8">
+              <div class="card" style="height: 400px;">
+                  <div class="card-header">
+                      <h5>Cart</h5>
+                  </div>
+                  <div class="card-body cart">
+                      <div class="col-sm-12 empty-cart-cls text-center"> 
+                        <img src="https://cdn-icons-png.flaticon.com/512/4297/4297127.png" width="80" class="img-fluid mb-4 mr-3">
+                        <h3><strong>Your Cart is Empty</strong></h3>
+                     </div>
+                   <div style="display: flex;
+                   justify-content: center;">
+                      <button type="button" class="btn btn-secondary">SHOP NOW</button>
+                   </div>
+                 </div>
+              
+              </div>
+        </div>
+      </div>
+  </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo panel-custom">
+      <!-- Footer Links -->
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Awards</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%" />
+
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+          <!-- Grid column -->
+          <div class="col-md-8 col-12 mt-5">
+            <p style="line-height: 1.7rem">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur.
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr
+          class="clearfix d-md-none rgba-white-light"
+          style="margin: 10% 15% 5%"
+        />
+
+        <!-- Grid row-->
+        <div class="row pb-3">
+          <!-- Grid column -->
+          <div class="col-md-12">
+            <div class="mb-5 flex-center">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text"> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script
+    
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- <script src="/public/js/main.js"></script> -->
+    <script type="module" src="/public/js/CartFile.js"></script>
+    <script type="module" src="/public/js/main.js"></script>
+    
+    
+  </body>
+</html>

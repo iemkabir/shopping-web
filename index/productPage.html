@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Detail Design Using Bootstrap 4.0</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/addons/rating.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-md" style="background-color: black;">
+        <a class="navbar-brand" href="#!">
+          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="30" alt="mdb logo" />
+        </a>
+  
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav1"
+          aria-controls="basicExampleNav1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">-</span>
+        </button>
+  
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="basicExampleNav1">
+          <!-- Right -->
+          <ul class="navbar-nav ml-auto MenuList">
+            <li class="nav-item">
+              <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                <span class="badge badge-pill red"></span>
+                <i class="fas fa-shopping-cart pl-0"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown" style="color: white;">
+              <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+                style="color: white;">Account</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link waves-effect myCart" style="color: white;"> Cart </a>
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:5500/index/login.html" class="nav-link waves-effect signin" style="color: white;">
+                Sign in </a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+<!-- Main continer for products-->
+<section>
+    <div class="main" style="margin-top: 120px;display: flex;justify-content: center;">
+        <div class="row" style="width: 90%;">
+            <div class="col-sm-6">
+               <div style="display: flex;justify-content: center;align-items: center;">
+                   <img class="ProductImage" alt="" style="width: 90%;">
+               </div>
+            </div>
+            <div class="col-6" style="display: flex;">
+               <div style="display: flex;flex-direction: column;">
+                <h4 class="ProductName"></h4> 
+
+                <strong style="color: rgb(0, 0, 0)">MRP</strong>
+
+                <h6 class="ProductPrice" style="margin-top: 8px;color: rgb(0, 0, 0)"> <span>10% off</span></h6> 
+
+                <p style="color: #b1a8a8;font-size: 12px;">Inclusive of all taxes</p>
+
+                <p style="font-size: 12px;color: rgb(0, 0, 0)">Available Colors</p>
+
+                <div class="productColours">
+                    <div style="background-color: red; padding: 10px">
+                        
+                    </div>
+                    <div style="background-color: blue; padding: 10px">
+                        
+                    </div>
+                    <div style="background-color: black; padding: 10px">
+                        
+                    </div>
+                </div> 
+                <p style="font-size: 12px;margin-top: 15px;">Size- UK/India</p> 
+                <div class="productSize">
+                    <div>
+                        9
+                    </div>
+                    <div>
+                        8
+                    </div>
+                    <div>
+                        7
+                    </div>
+                </div> 
+               <div class="productInfo" style="margin-top: 15px;">
+                <h5>Details</h5>
+                <p>A knit basic tee featuring a V-neck and short sleeves.</p>
+                
+                <h6>Content + Care</h6>
+                <p>60% Cotton 40% Polyester- 150 GSM</p>
+                <h6>Size + Fit</h6>
+                <p>Model Is 6'1" and wearing medium</p>
+               </div>
+               
+               <div>
+                 <button class="btn btn-warning" style="padding: 10px 15px;">ADD TO CART</button>
+                 <button class="btn btn-dark" style="padding: 10px 15px;">BUY NOW</button>
+               </div>
+
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<section>
+  <div class="" style="width: auto;overflow: hidden; ">
+    
+    <div class="corosolContainer" style="padding: 0px 25px;display: flex;flex-direction: row; overflow: hidden;margin-bottom: 18px;">
+
+    </div>
+
+    <!--SLider buttons-->
+    <div style="display: flex;flex-direction: row;gap: 5px;float: right;margin-right: 15px;">
+        <div class="previousColosol">
+          <img style="width: 28px;" src="https://cdn-icons-png.flaticon.com/512/318/318477.png" alt="">
+        </div>
+
+        <div class="nextColosol">
+          <img style="width: 28px;" src="https://cdn-icons-png.flaticon.com/512/318/318476.png" alt="">
+        </div>
+    </div>
+
+  </div>
+</section>
+
+    <script src="/public/js/product.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+html body{
+    font-family: 'Fjalla One', sans-serif;
+    color: #5c5c5c;
+    background:white;   
+}
+
+
+
+.checkItemConatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.checkOutBoxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -16px;
+}
+
+.formElems label{
+    color: rgb(105, 105, 105);
+    font-size: 13px;
+}
+
+.checkOutAddressBox{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.optionsRow{
+    width: 100%;
+    background: white;
+    color: black;
+    border: 1px solid #e8e8e8;
+    
+}
+
+.iconHeading{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    width: 100%;
+    padding: 0px;
+}
+
+.toggleElem{
+    margin-left: 28px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.toggleElemActive{
+    height: auto;
+    overflow: visible;
+    padding: 15px;
+    background: white;
+    columns: black;
+}
+
+.AdrsBtn{
+    outline: none;
+    border: none;
+}
+
+.AdrsBtn:hover{
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.itemsPriceBox{
+    padding: 10px 0px 10px 0px;
+}
+
+.lining{
+    width: 100%;
+    background: #ffffff7d;
+    border-bottom: 1px solid;
+    color: black;
+    margin-left: -14px;
+}
+
+.bottomELemConatiner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.increDecre{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.increDecre i{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 14px;
+}
+
+.increDecre i:hover{
+    cursor: pointer;
+}
+
+.orderPLaceBtn{
+    width: 118px; 
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.edit{
+    margin-right: 8px;
+  color: #adadad;
+  width: 10%;
+  float: right;
+  border: 1px solid;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.edit:hover{
+    cursor: pointer;
+}
+
+.placeOrderBtn{
+    float: right;
+    padding: 11px;
+    background: #ffc107;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 134px;
+    margin-left: auto;
+}
+
+.cartElemContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}

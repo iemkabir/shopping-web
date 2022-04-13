@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset = "UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/public/css/style.css" />
+  <link rel="stylesheet" href="/public/css/profile.css" />
+  <link rel="stylesheet" href="/public/css/checkout.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-md" style="background-color: black;">
+      <a class="navbar-brand" href="#!">
+        <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="30" alt="mdb logo" />
+      </a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav1"
+        aria-controls="basicExampleNav1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">-</span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="basicExampleNav1">
+        <!-- Right -->
+        <ul class="navbar-nav ml-auto MenuList">
+          <li class="nav-item">
+            <a href="#!" class="nav-link navbar-link-2 waves-effect">
+              <span class="badge badge-pill red"></span>
+              <i class="fas fa-shopping-cart pl-0"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown" style="color: white;">
+            <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+              style="color: white;">Account</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link waves-effect myCart" style="color: white;"> Cart </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/index/login.html" class="nav-link waves-effect signin" style="color: white;">
+              Sign in </a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<!-- Main Section of Cards-->
+  <section class="section1">
+    <div class="CheckOutContainer" style="margin-top: -50px;">
+      <div class="row" style="justify-content: center;gap: 21px; padding-left: 22px;">
+
+        <!-- User address, Products and Payment Container-->
+        <div class="col-md-5 checkItemConatiner" style="padding: 0px;">
+          <div class="card checkOutBoxContainer" style="width: 100%;border: none;background: none;">
+
+            <!--User Logged In element-->
+
+            <div class="row optionsRow" style="margin-top: 40px;">
+              <div class="checkOutAddressBox">
+                <div class="iconHeading">
+                  <i class="fa-solid fa-user-check" style="margin: 4px 0px 0px 25px;"></i>
+                  <p>LOGGED IN</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="row optionsRow">
+              <div class="checkOutAddressBox">
+                <div class="iconHeading">
+                  <i class="fa-solid fa-user-check" style="margin: 4px 0px 0px 25px;"></i>
+                  <p>SAVED ADDRRESS</p>
+                </div>
+
+                <div class="">
+                  <button type="button" style="margin-left: 40px;" class="btn btn-primary DeliverBTN">Deliver Here</button>
+                </div>
+              </div>
+            </div>
+            <!--User Fill Address element-->
+
+            <div class="row optionsRow">
+              <div class="checkOutAddressBox">
+                <div class="iconHeading">
+                  <i class="fa-solid fa-plus" style="margin: 4px 0px 0px 25px;"></i>
+                  <p>ADD NEW ADDRESS</p>
+                  <div></div>
+                </div>
+
+                <!--User address Form element-->
+                <div></div>
+
+                <div class="">
+                  <form action="" class="formElems">
+                    <div class="row mt-2" style="width: 90%;">
+                      <div class="col-md-6"><label class="labels">Name *</label><input type="text" name="FirstName" class="form-control" placeholder="First Name" value="" required=""></div>
+                      <div class="col-md-6"><label class="labels">Surname *</label><input name="SurName" type="text" class="form-control" value="" placeholder="Surname" required=""></div>
+                    </div>
+
+                    <div class="row mt-2" style="width: 90%;">
+                      <div class="col-md-6"><label class="labels">Pincode *</label><input type="text" class="form-control" placeholder="Pincode" name="Pincode" value="" required=""></div>
+                      <div class="col-md-6"><label class="labels">Locality *</label><input type="text" class="form-control" value="" name="Locality" placeholder="Locality" required=""></div>
+                    </div>
+
+                    <div class="row mt-3" style="width: 90%;">
+                      <div class="col-md-12"><label class="labels">Address(Street And Area) *</label><input type="text" class="form-control" name="Address" placeholder="Address" value="" required=""></div>
+                    </div>
+
+                    <div class="row mt-2" style="width: 90%;">
+                      <div class="col-md-6"><label class="labels">City *</label><input type="text" name="City" class="form-control" placeholder="City" value="" required=""></div>
+                      <div class="col-md-6"><label class="labels">State *</label><input type="text" name="State" class="form-control" value="" placeholder="State" required=""></div>
+                    </div>
+
+                    <div class="row mt-2" style="width: 90%;">
+                      <div class="col-md-6"><label class="labels">Phone *<span style="color: red;">(Don't Include 91 Or 0)</span></label><input type="text" class="form-control" placeholder="Phone" name="PhoneNumber" value="" required=""></div>
+                      <div class="col-md-6"><label class="labels">EmailAddress *(Optional)</label><input type="text" class="form-control" value="" placeholder="Email Address"></div>
+                    </div>
+                  </form>
+                  <button type="submit" class="AdrsBtn">Submit</button>
+                </div>
+
+              </div>
+            </div>
+
+            <!--User Products detail element-->
+
+
+            <div class="row optionsRow">
+              <div class="checkOutAddressBox">
+                <div class="iconHeading">
+                  <i class="fa-solid fa-bag-shopping" style="margin: 4px 0px 0px 25px;"></i>
+                  <p>CART ITEMS</p>
+                </div>
+
+                <div class=" toggleElem">
+                  <div class="cartElemContainer">
+                    
+
+                      <!--User Product Image conatiner -->
+
+                      
+
+                    
+
+                      <!--<button class='placeOrderBtn'>Place Order</button> -->
+                    </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!--User Payment options element-->
+
+
+            <div class="row optionsRow" style="margin-bottom: 40px;">
+              <div class="checkOutAddressBox">
+                <div class="iconHeading">
+                  <i class="fa-solid fa-file-invoice-dollar" style="margin: 4px 0px 0px 25px;"></i>
+                  <p>Payment</p>
+                </div>
+                <div>
+                  <div class="toggleElem">
+                    <h5>ascqasca</h5>
+                    <h5>ascqasca</h5>
+                    <h5>ascqasca</h5>
+                    <h5>ascqasca</h5>
+                    <h5>ascqasca</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+         <!-- items Box conatiner parent column-->
+        <div class="col-md-3" >
+      <!-- items Box conatiner-->
+          <div class="row" style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 23px; gap:15px">
+            <div class="col" style="border: 1px solid #dcd9d9;">
+              <div style="padding: 15px 17px 5px 15px;">
+                <dl class="dlist-align">
+                  <dt style="float: left">Total Items:</dt>
+                  <dd class="text-right ml-3">5651</dd>
+              </dl>
+              <!-- border line between item Count and price-->
+              <div style="    width: 100%;border-bottom: 1px solid #eae1e1;margin-bottom: 13px;margin-top: -5px;"></div>
+
+              <!-- Checkout price Box-->
+                <dl class="dlist-align">
+                  <dt style="float: left">Total price:</dt>
+                  <dd class="text-right ml-3"></dd>
+              </dl>
+
+               <!-- Discount element container-->
+              
+              <dl class="dlist-align">
+                  <dt style="float: left";>Discount:</dt>
+                  <dd class="text-right text-danger ml-3">$10</dd>
+              </dl>
+
+               <!-- border line Total price-->
+               <div style="    width: 100%;border-bottom: 1px solid #eae1e1;margin-bottom: 13px;margin-top: -5px;"></div>
+
+              <dl class="dlist-align">
+                  <dt style="float: left">Total:</dt>
+                  <dd class="text-right text-dark b ml-3"><strong></strong></dd>
+              </dl>
+              </div>
+            </div>
+
+            <!-- Box 2 coupans and other info-->
+
+            <div class="col" style="border: 1px solid #dcd9d9;">
+              <div>
+                Coupons
+              </div>
+              <div>
+                <div class="f21-os-instruction">
+                  <div class="f21-os-percent-badge-icon-container" style="margin-top: 10px; justify-content: left; display: flex;">
+                    <img class="f21-os-percent-badge-icon" src="https://forever21.imgix.net/img/app/brands/forever21/spc/f21-noun-offer-3025168.svg">
+                    <span>Apply coupons to get the best prices</span>
+                  </div>
+                  <div class="f21-os-sm"><p style="margin: 5px 0px 0px; font-size: 11px;">
+                    <span>Login</span> / <span>Register</span> 
+                    to see best offers / coupons for you</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="/public/js/profile.js"></script>
+  <script src="/public/js/CartFile.js"></script>
+  <script src="/public/js/main.js"></script>
+</body>
+
+</html>
